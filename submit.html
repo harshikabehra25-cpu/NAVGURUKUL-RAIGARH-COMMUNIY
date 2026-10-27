@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Share your information | Navgurukul Raigarh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="students.js" defer></script>
+    <script src="form.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-name"><span>Nav</span>gurukul</span
+        ><span class="brand-campus">RAIGARH CAMPUS</span></a
+      ><a class="header-action" href="index.html">← Community</a>
+    </header>
+    <main class="form-wrap">
+      <section class="form-panel">
+        <p class="eyebrow">
+          <span class="dot"></span> RAIGARH CAMPUS COMMUNITY
+        </p>
+        <h1>Share your <span>information.</span></h1>
+        <p class="form-intro">
+          Add your details to introduce yourself to the Navgurukul Raigarh
+          community.
+        </p>
+        <div class="notice"> 
+          <p>
+            <strong>Note:</strong> Fill this form correctly and submit it. Your information will be added to the community directory.
+          </p>
+        </div>
+        <form id="form">
+          <div class="form-section-title">About you</div>
+          <div class="fields">
+            <label
+              >Full name <span class="required">*</span
+              ><input
+                name="name"
+                required
+                maxlength="80"
+                placeholder="Enter your full name"
+            /></label>
+            <label
+              >Community type <span class="required">*</span
+              ><select name="role" id="role" required>
+                <option value="Student">Student</option>
+                <option value="Student Council">Student Council</option>
+                <option value="Team Member">Campus Team Member</option>
+              </select></label
+            >
+            <label id="cohort-field"
+              >Cohort <span class="required">*</span
+              ><select name="cohort" id="cohort">
+                <option value="1">Cohort 1</option>
+                <option value="2">Cohort 2</option>
+              </select></label
+            >
+            <label id="council-field"
+              >Council post / campus role<input
+                name="councilPost"
+                maxlength="100"
+                placeholder="which council post / student"
+            /></label>
+            <label
+              >Father's name<input
+                name="fatherName"
+                maxlength="80"
+                placeholder="Father's full name"
+            /></label>
+            <label
+              >Mother's name<input
+                name="motherName"
+                maxlength="80"
+                placeholder="Mother's full name"
+            /></label>
+            <label
+              >What are you studying? <span class="required">*</span
+              ><input
+                name="study"
+                required
+                maxlength="100"
+                placeholder="e.g. Software Programming"
+            /></label>
+            <label
+              >Language you have chosen<input
+                name="language"
+                maxlength="80"
+                placeholder="e.g. JavaScript, Python"
+            /></label>
+            <label
+              >City<input name="city" maxlength="80" placeholder="Your city"
+            /></label>
+            <label
+              >District<input
+                name="district"
+                maxlength="80"
+                placeholder="Your district"
+            /></label>
+            <label
+              >Campus joining date<input
+                name="joiningDate"
+                id="joining"
+                type="date"
+            /></label>
+            <label
+              >Mobile number (optional)<input
+                name="mobile"
+                type="tel"
+                inputmode="tel"
+                maxlength="16"
+                placeholder="For campus use only"
+            /></label>
+            <label class="wide"
+              >Photo URL (optional)<input
+                name="photo"
+                type="url"
+                placeholder="Paste a photo link starting with https://"
+            /></label>
+            <label class="wide"
+              >A little about yourself<textarea
+                name="about"
+                rows="4"
+                maxlength="600"
+                placeholder="Tell us a little about yourself..."
+              ></textarea>
+            </label>
+          </div>
+          <label class="consent"
+            ><input type="checkbox" required /><span
+              >I confirm that these details are correct and I give permission
+              for my profile details and photo, if added, to appear in the
+              campus community directory. I understand that this demo is not a
+              secure shared database.</span
+            ></label
+          >
+          <button class="primary-button submit-button" type="submit">
+            Submit information <span>→</span>
+          </button>
+          <p id="message" class="message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <footer class="form-footer">
+        <a href="index.html">← Back to Navgurukul Raigarh Community</a
+        ><span>Navgurukul · Raigarh Campus</span>
+      </footer>
+    </main>
+  </body>
+</html>

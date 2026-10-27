@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navgurukul Raigarh Campus Community</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="students.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Navgurukul Raigarh Campus home"
+      >
+        <span class="brand-name"><span>Nav</span>gurukul</span
+        ><span class="brand-campus">RAIGARH CAMPUS</span>
+      </a>
+      <a class="header-action" href="submit.html"
+        >Share your information <span></span></a
+      >
+    </header>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot"></span> OUR CAMPUS, OUR COMMUNITY
+          </p>
+          <h1>The people who make<br /><span>Raigarh feel like home.</span></h1>
+          <p class="hero-description">
+            Meet the students and team members who learn, support and grow
+            together at Navgurukul Raigarh Campus.
+          </p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-circle circle-one"></div>
+          <div class="art-circle circle-two"></div>
+          <div class="art-card">
+            <span>NG</span><b>Growing<br />together.</b
+            ><small>RAIGARH CAMPUS</small>
+          </div>
+        </div>
+      </section>
+      <section class="community-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">FIND YOUR PEOPLE</p>
+            <h2>Our community</h2>
+            <p class="section-description">
+              Choose a group to explore profiles.
+            </p>
+          </div>
+          <a class="primary-button" href="submit.html">＋ Add your profile</a>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Community groups">
+          <button
+            class="tab active"
+            id="students-tab"
+            data-group="students"
+            role="tab"
+            aria-selected="true"
+          >
+            Campus Students <span id="student-count">0</span>
+          </button>
+          <button
+            class="tab"
+            id="team-tab"
+            data-group="team"
+            role="tab"
+            aria-selected="false"
+          >
+            Campus Team <span id="team-count">0</span>
+          </button>
+        </div>
+        <div class="toolbar">
+          <label class="search-box"
+            ><span aria-hidden="true">⌕</span
+            ><input
+              id="search"
+              placeholder="Search by name..."
+              autocomplete="off"
+              aria-label="Search by name"
+          /></label>
+          <label class="cohort-filter" id="cohort-wrap"
+            >Cohort
+            <select id="cohort">
+              <option value="all">All cohorts</option>
+              <option value="1">Cohort 1</option>
+              <option value="2">Cohort 2</option>
+            </select></label
+          >
+        </div>
+        <div id="grid" class="people-grid"></div>
+        <div id="empty" class="empty-state">
+          <div class="empty-icon">✦</div>
+          <h3>No profiles here yet</h3>
+          <p>
+            Be the first to share your details and help build our campus
+            community.
+          </p>
+          <a class="primary-button" href="submit.html"
+            >Share your information</a
+          >
+        </div>
+        <nav class="pagination" aria-label="Profile pages">
+          <button id="prev">← Previous</button><span id="page">Page 1</span
+          ><button id="next">Next →</button>
+        </nav>
+      </section>
+      <footer class="site-footer">
+        <div>
+          <span class="footer-brand"><span>Nav</span>gurukul</span
+          ><span class="footer-campus">Raigarh Campus</span>
+        </div>
+        <p>The students and team members who make our campus a community.</p>
+      </footer>
+    </main>
+  </body>
+</html>
